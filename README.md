@@ -1,6 +1,6 @@
 # Psychotherapy
 
-* This web was created for my first klient who is a psychotherapist.
+* This website was created for my first client who is a psychotherapist.
 
 ## Technology
 <img src="images/jsTech.png" height="100">
