@@ -1,0 +1,31 @@
+$ffOne:'Roboto', sans-serif;
+
+$colFirst: #c10492;
+$colSec: rgba(255, 219, 88, 1);
+$colThird: #25014f;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-size: 16px;
+    font-family: $ffOne;
+    height: 100vh;
+}
+
+header {
+    position: relative;
+    height: 60vh;
+    background-image: url(../images/wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    overflow: hidden;
+}

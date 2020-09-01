@@ -1,0 +1,124 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+    padding: 5px 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px -3px 20px 0px rgba(gray, 0.6);
+    border-top: 1px solid gray;
+    z-index: 4;
+
+    .menu__burger-click {
+        position: relative;
+        display: inline-block;
+        border: none;
+        background-color: white;
+        cursor: pointer;
+        outline:none;
+
+
+        .burger_btn {
+            font-size: 3em;
+            margin: 0 10px;
+            
+            // .x_btn{
+            //     position: absolute;
+            //     top:8%;
+            //     left:8%;
+            // }
+        }
+    }
+
+    .menu__text {
+        color: $colSec;
+        font-size: 1.5em;
+    }
+
+    .menu__call {
+        color: black;
+        background-color: transparent;
+        font-size: 2.8em;
+        border: none;
+        margin-right: 20px;
+        animation: call 5s linear infinite both;
+    }
+}
+
+.navigate {
+    position: fixed;
+    bottom: -150%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 2em;
+    width: 100%;
+    border: 1px solid white;
+    background-color: white;
+    transition: .3s;
+    z-index: 3;
+    
+    text-transform: uppercase;
+
+    ul {
+        li {
+            list-style: none;
+            margin-top: 3em;
+            margin-bottom: 5em;
+
+            a {
+                text-decoration: none;
+                color: black;
+                font-size: 2em;
+            }
+        }
+    }
+}
+
+.navigate.active {
+    bottom: 0;
+}
+
+@keyframes call {
+    0% {}
+
+    91% {
+        transform: rotate(0deg);
+    }
+
+    92% {
+        transform: rotate(-15deg);
+    }
+
+    93% {
+        transform: rotate(15deg);
+    }
+
+    94% {
+        transform: rotate(-15deg);
+    }
+
+    95% {
+        transform: rotate(15deg);
+    }
+
+    96% {
+        transform: rotate(-15deg);
+    }
+
+    97% {
+        transform: rotate(15deg);
+    }
+
+    98% {
+        transform: rotate(-15deg);
+    }
+
+    99% {
+        transform: rotate(15deg);
+    }
+
+    100% {}
+}

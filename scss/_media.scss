@@ -1,0 +1,114 @@
+@media (orientation: landscape) {
+    .header__title {
+        margin-top: 20px;
+        font-size: 4em;
+    }
+
+    .header__topic {
+        font-size: 3em;
+    }
+
+    .navigate {
+        height: 100%;
+        padding: 0;
+
+        ul {
+            li {
+                margin-top: 2em;
+                margin-bottom: 2.5em;
+
+                a {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+
+
+    header {
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .navigate {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        height: 100px;
+        top: 0;
+        left: 50%;
+        background-color: white;
+
+        ul {
+            top: 0;
+            left: auto;
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            align-items: center;
+
+            li {
+                padding: 10px;
+
+                a {
+                    font-size: 1.4em;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    margin-left: 15px;
+                    padding: 10px 20px;
+                    color: black;
+
+                    &:hover {
+                        border-bottom: 1px solid black;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    .about {
+        .about__text {
+            font-size: 2.5em;
+        }
+
+        .photo {
+            width: 300px;
+            height: 300px;
+        }
+    }
+
+    .about__section {
+        display: flex;
+        justify-content: center;
+
+        .about__content {
+            font-size: 2em;
+            width: 80%;
+        }
+    }
+
+    .main {
+        font-size: 2em;
+
+        .therapy__text {
+            width: 75%;
+        }
+    }
+
+    .footer {
+        font-size: 2em;
+        padding-bottom: 50px;
+    }
+}

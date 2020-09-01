@@ -1,0 +1,47 @@
+.about {
+    overflow: hidden;
+
+    .about__text {
+        margin-top: 10px;
+    }
+
+    .photo {
+        background-image: url(../images/KatarzynaBanach.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 120px;
+        height: 120px;
+        border: 1px solid $colThird;
+        margin: 10px auto;
+    }
+}
+
+.about__section {
+    text-align: center;
+    padding: 5px 10px;
+    min-height: 40vh;
+    display: flex;
+    position: relative;
+    margin: 20px 10px;
+    z-index: 2;
+
+    .about__content {
+        width: 95%;
+        margin-top: 5px;
+        color: black;
+        position: absolute;
+        letter-spacing: 2px;
+        z-index: 1;
+    }
+
+    .img__about {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 75%;
+        height: 100%;
+        // opacity: 0.4;
+        background-color: $colSec;
+    }
+}
