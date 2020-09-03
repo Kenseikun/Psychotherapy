@@ -25,13 +25,22 @@
     }
 }
 
+@media (min-width: 480px){
+    .about__section{
+        height: 420px;
+    }
+
+    .about__therapy{
+        height: 320px;
+    }
+}
+
 @media (min-width: 768px) {
 
 
     header {
         display: flex;
         flex-direction: column;
-        height: 50vh;
     }
 
     .menu {
@@ -39,14 +48,14 @@
     }
 
     .navigate {
+       
         display: flex;
         justify-content: flex-end;
         align-items: center;
         position: relative;
         width: 100%;
-        height: 100px;
+        height: 80px;
         top: 0;
-        left: 50%;
         background-color: white;
 
         ul {
@@ -58,14 +67,14 @@
             align-items: center;
 
             li {
-                padding: 10px;
+                 padding: 10px;
 
                 a {
                     font-size: 1.4em;
                     text-decoration: none;
                     text-transform: uppercase;
                     margin-left: 15px;
-                    padding: 10px 20px;
+                    padding: 0px 20px;
                     color: black;
 
                     &:hover {
@@ -87,15 +96,17 @@
             width: 300px;
             height: 300px;
         }
+        
     }
 
     .about__section {
         display: flex;
         justify-content: center;
+        height: 920px;
 
         .about__content {
             font-size: 2em;
-            width: 80%;
+            width: 90%;
         }
     }
 
@@ -111,4 +122,33 @@
         font-size: 2em;
         padding-bottom: 50px;
     }
+
+    .about__therapy{
+        height: 620px;
+    }
+}
+
+@media (min-width: 1024px) {
+.header{
+    height: 80vh;
+}
+
+.container_bottom{
+
+    .header__title {
+        font-size: 8em;
+      }
+    .header__topic, .header__topic-sec{
+        font-size: 1.8em;
+        z-index: 2;
+    }
+}
+
+.about__section {
+          height: 620px;}
+          
+.about__therapy{
+            height: 400px;
+        }
+
 }
