@@ -1,8 +1,10 @@
 .about {
     overflow: hidden;
+    text-align: center;
 
     .about__text {
         margin-top: 10px;
+
     }
 
     .photo {
@@ -18,13 +20,14 @@
 }
 
 .about__section {
-    text-align: center;
+    text-align: left;
     padding: 5px 10px;
-    min-height: 40vh;
     display: flex;
     position: relative;
     margin: 20px 10px;
     z-index: 2;
+    height: 530px;
+
 
     .about__content {
         width: 95%;
@@ -41,7 +44,10 @@
         right: 0;
         width: 75%;
         height: 100%;
-        // opacity: 0.4;
         background-color: $colSec;
     }
+}
+
+.about__therapy{
+    height: 400px;
 }
